@@ -167,11 +167,10 @@ footer img {
   }
   footer {
     font-size: 1rem;
-    margin-left: 5rem;
   }
   footer p {
     margin-top: 1.5rem;
-    margin-left: 2.5rem;
+    margin-left: 2rem;
   }
   footer img {
     height: 1rem;
@@ -256,7 +255,7 @@ footer img {
     margin-right: 2rem;
   }
 }
-@media (min-width: 766px) {
+@media (min-width: 766px) and (max-width: 900px) {
   .name {
     font-size: 2rem;
   }
@@ -275,13 +274,60 @@ footer img {
   }
   footer p {
     font-size: 1.2rem;
-    margin-left: 2rem;
     margin-top: 1rem;
   }
   footer img {
     height: 2rem;
     width: 2rem;
+  }
+  .grid-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .grid-products div {
+    margin-left: 2rem;
     margin-right: 2rem;
+    margin-bottom: 2rem;
+  }
+  .grid-products h5 {
+    font-size: 1.5rem;
+  }
+  .grid-products div {
+    width: 10rem;
+    height: 30rem;
+  }
+  .grid-gallery img {
+    height: 15rem;
+    width: 18rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+@media (min-width: 900px) {
+  .name {
+    font-size: 2rem;
+  }
+  .div-content img {
+    height: 20rem;
+    width: 20rem;
+    margin-right: 5rem;
+  }
+  .div-content p {
+    font-size: 1.5rem;
+    width: 15rem;
+    margin-left: 5rem;
+  }
+  footer .hx {
+    font-size: 2rem;
+  }
+  footer p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+  footer img {
+    height: 2rem;
+    width: 2rem;
   }
   .grid-products {
     display: flex;
