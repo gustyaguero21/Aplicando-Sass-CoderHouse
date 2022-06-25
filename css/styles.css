@@ -123,10 +123,13 @@
   color: white;
   border-color: #e5097f;
   font-size: 1.2rem;
+  margin-top: 1rem;
 }
-.button button:hover {
-  background-color: #e5097f;
+.button:hover {
+  background-color: white;
   border-color: #e5097f;
+  color: #e5097f;
+  font-weight: bold;
 }
 
 footer {

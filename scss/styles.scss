@@ -1,8 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500&display=swap');
-*{
-    font-family: 'Zen Maru Gothic', sans-serif;
-    color: #e5097f;
-}
+//  IMPORTANDO EL RESET DE LA PAGINA
+@import "../scss/reset";
+//  APLICANDO NESTING O ANIDADO 
 .body-background{
     background-image: url(../images/fondo-blanco.jpg);
     background-attachment: fixed;
@@ -63,13 +61,13 @@
     a{
         background-color: #e5097f;
         border-color: #e5097f;
-    }
-    a:hover{
-        background-color: white;
-        color: black;
-        border-color: #e5097f;
-        font-weight: bold;
-    }
+        &:hover{
+            background-color: white;
+            color: black;
+            border-color: #e5097f;
+            font-weight: bold;
+        }
+    } 
 }
 /*  SERVICIOS */
 .grid-services{
@@ -91,13 +89,14 @@
     a{
         background-color: #e5097f;
         border-color: #e5097f;
+        &:hover{
+            background-color: white;
+            color: black;
+            border-color: #e5097f;
+            font-weight: bold;
+        }
     }
-    a:hover{
-        background-color: white;
-        color: black;
-        border-color: #e5097f;
-        font-weight: bold;
-    }
+    
 }
 /*  GALERIA    */
 .grid-gallery{
@@ -117,9 +116,12 @@
     color: white;
     border-color: #e5097f;
     font-size: 1.2rem;
-    button:hover{
-        background-color:#e5097f;
+    margin-top: 1rem;
+    &:hover{
+        background-color:white;
         border-color: #e5097f;
+        color:#e5097f;
+        font-weight: bold;
     }
 }
 footer{
@@ -130,4 +132,5 @@ footer{
         width: 2rem;
     }
 }
-@import "../scss/Media-queries/screen";
+// IMPORTANDO LAS MEDIA QUERIES
+@import "../scss/screen";
