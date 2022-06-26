@@ -1,5 +1,8 @@
 //  IMPORTANDO EL RESET DE LA PAGINA
 @import "../scss/reset";
+@import "../scss/variables";
+@import "../scss/mixins";
+
 //  APLICANDO NESTING O ANIDADO 
 .body-background{
     background-image: url(../images/fondo-blanco.jpg);
@@ -9,18 +12,17 @@
 }
 .hx{
     font-size: 2rem;
-    color: #e5097f;
-    text-shadow: 1px 1px 5px #e5097f;
+    color: $magenta;
+    text-shadow: 1px 1px 5px $magenta;
     text-align: center;
     margin-top: 2rem;
     margin-bottom: 5rem;
 }
 .name{
-    font-size: 2rem;
+    @include fonts(2rem,none);
 }
 
 /*  INDEX   */
-
 .div-content{
     margin-top: 5rem;
     display: flex;
@@ -28,46 +30,46 @@
     justify-content: center;
     margin-bottom: 5rem;
     img{
-        height: 20rem;
-        width:20rem;
-        box-shadow: 2px 2px 10px 10px #e5097f;
+        @include sizes(20rem,20rem);
+        box-shadow: 2px 2px 10px 10px $magenta;
     }
     p{
-        font-size: 2rem;
-        font-style: italic;
+        @include fonts(2rem,italic);
         text-shadow: 1px 1px 5px black;
-        height:20rem;
-        width: 25rem;
+        @include sizes(20rem,25rem);
         margin-left: 10rem;
     }
 }
+
 /*  PRODUCTOS   */
 .grid-products{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly; 
     div{
-        margin-left: 2rem;
-        margin-right: 5rem;
-        margin-bottom: 5rem;
+        margin:0rem 2rem 5rem 5rem ;
     }
     h5{
-        font-size: 1.2rem;
+        @include fonts(2rem,none);
     }
     p{
-        color: #e5097f;
+        color: $magenta;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+}
+.boton{
+    background-color: $magenta;
+    color: white;
+    border-color: $magenta;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    &:hover{
+        background-color:white;
+        border-color: $magenta;
+        color:$magenta;
         font-weight: bold;
     }
-    a{
-        background-color: #e5097f;
-        border-color: #e5097f;
-        &:hover{
-            background-color: white;
-            color: black;
-            border-color: #e5097f;
-            font-weight: bold;
-        }
-    } 
 }
 /*  SERVICIOS */
 .grid-services{
@@ -75,28 +77,18 @@
     flex-wrap: wrap;
     justify-content: space-evenly; 
     div{
-        margin-left: 2rem;
-        margin-right: 2rem;
-        margin-bottom: 5rem;
+        margin: 0rem 2rem 5rem 2rem;
     }
     h5{
-        font-size: 1.5rem;
+        @include fonts(2rem,none);
     }
     p{
-        color: #e5097f;
+        color: $magenta;
         font-weight: bold;
     }
-    a{
-        background-color: #e5097f;
-        border-color: #e5097f;
-        &:hover{
-            background-color: white;
-            color: black;
-            border-color: #e5097f;
-            font-weight: bold;
-        }
+    .boton2{
+       @extend .boton;
     }
-    
 }
 /*  GALERIA    */
 .grid-gallery{
@@ -104,32 +96,20 @@
     flex-wrap: wrap;
     justify-content: space-evenly; 
     img{
-        margin-left: 5rem;
-        margin-right: 5rem;
-        margin-bottom: 5rem;
+        margin: 0rem 5rem 5rem 5rem;
         box-shadow: 2px 2px 10px 10px rgb(103, 103, 103);
     }
 }
 /*  CONTACTO    */
-.button{
-    background-color: #e5097f;
-    color: white;
-    border-color: #e5097f;
-    font-size: 1.2rem;
+.boton3{
+    @extend .boton;
     margin-top: 1rem;
-    &:hover{
-        background-color:white;
-        border-color: #e5097f;
-        color:#e5097f;
-        font-weight: bold;
-    }
 }
 footer{
-    font-size: 1.2rem;
+    @include fonts(2rem,none);
     font-weight: bold;
     img{
-        height: 2rem;
-        width: 2rem;
+        @include sizes(5rem,2rem);
     }
 }
 // IMPORTANDO LAS MEDIA QUERIES
