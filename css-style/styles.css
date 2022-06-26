@@ -4,221 +4,6 @@
   color: #e5097f;
 }
 
-/*  RESPONSIVE DESIGN  */
-@media (min-width: 320px) and (max-width: 479px) {
-  .name {
-    font-size: 1.2rem;
-  }
-  .div-content {
-    margin-top: 2rem;
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 2rem;
-  }
-  .div-content img {
-    height: 15rem;
-    width: 15rem;
-    box-shadow: 2px 2px 10px 10px #e5097f;
-    margin-bottom: 2rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
-  }
-  .div-content p {
-    font-size: 1.5rem;
-    font-style: italic;
-    text-shadow: 1px 1px 5px black;
-    height: 20rem;
-    width: 15rem;
-    margin-left: 2rem;
-  }
-  footer {
-    font-size: 1rem;
-  }
-  footer p {
-    margin-top: 1.5rem;
-    margin-left: 2rem;
-  }
-  footer img {
-    height: 1rem;
-    width: 1rem;
-    margin-left: 3rem;
-  }
-  .hx {
-    font-size: 1.5rem;
-  }
-  .grid-products {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
-  .grid-products div {
-    margin-left: 2rem;
-    margin-right: 2rem;
-    margin-bottom: 5rem;
-  }
-  .grid-products h5 {
-    font-size: 1.2rem;
-  }
-  .grid-products div {
-    width: 10rem;
-    height: 25rem;
-  }
-  .grid-gallery img {
-    height: 15rem;
-    width: 18rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
-  }
-}
-@media (min-width: 480px) and (max-width: 765px) {
-  .name {
-    font-size: 2rem;
-  }
-  .div-content img {
-    height: 20rem;
-    width: 20rem;
-  }
-  .div-content p {
-    font-size: 1.5rem;
-    margin-top: 3rem;
-    width: 15rem;
-    margin-left: 2rem;
-  }
-  footer .hx {
-    font-size: 1.5rem;
-  }
-  footer p {
-    font-size: 1rem;
-    margin-left: 2rem;
-    margin-top: 1rem;
-  }
-  footer img {
-    height: 1.5rem;
-    width: 1.5rem;
-    margin-right: 2rem;
-  }
-  .grid-products {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
-  .grid-products div {
-    margin-left: 2rem;
-    margin-right: 2rem;
-    margin-bottom: 2rem;
-  }
-  .grid-products h5 {
-    font-size: 1.5rem;
-  }
-  .grid-products div {
-    width: 10rem;
-    height: 30rem;
-  }
-  .grid-gallery img {
-    height: 15rem;
-    width: 18rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
-  }
-}
-@media (min-width: 766px) and (max-width: 900px) {
-  .name {
-    font-size: 2rem;
-  }
-  .div-content img {
-    height: 20rem;
-    width: 20rem;
-    margin-right: 5rem;
-  }
-  .div-content p {
-    font-size: 1.5rem;
-    width: 15rem;
-    margin-left: 5rem;
-  }
-  footer .hx {
-    font-size: 2rem;
-  }
-  footer p {
-    font-size: 1.2rem;
-    margin-top: 1rem;
-  }
-  footer img {
-    height: 2rem;
-    width: 2rem;
-  }
-  .grid-products {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
-  .grid-products div {
-    margin-left: 2rem;
-    margin-right: 2rem;
-    margin-bottom: 2rem;
-  }
-  .grid-products h5 {
-    font-size: 1.5rem;
-  }
-  .grid-products div {
-    width: 10rem;
-    height: 30rem;
-  }
-  .grid-gallery img {
-    height: 15rem;
-    width: 18rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
-  }
-}
-@media (min-width: 900px) {
-  .name {
-    font-size: 2rem;
-  }
-  .div-content img {
-    height: 20rem;
-    width: 20rem;
-    margin-right: 5rem;
-  }
-  .div-content p {
-    font-size: 1.5rem;
-    width: 15rem;
-    margin-left: 5rem;
-  }
-  footer .hx {
-    font-size: 2rem;
-  }
-  footer p {
-    font-size: 1.2rem;
-    margin-top: 1rem;
-  }
-  footer img {
-    height: 2rem;
-    width: 2rem;
-  }
-  .grid-products {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
-  .grid-products div {
-    margin-left: 2rem;
-    margin-right: 2rem;
-    margin-bottom: 2rem;
-  }
-  .grid-products h5 {
-    font-size: 1.5rem;
-  }
-  .grid-products div {
-    width: 10rem;
-    height: 30rem;
-  }
-  .grid-gallery img {
-    height: 15rem;
-    width: 18rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
-  }
-}
 .body-background {
   background-image: url(../images/fondo-blanco.jpg);
   background-attachment: fixed;
@@ -237,7 +22,11 @@
 
 .name {
   font-size: 2rem;
-  font-style: italic;
+  font-style: none;
+}
+
+main ul li a {
+  font-size: 1.2rem;
 }
 
 /*  INDEX   */
@@ -339,71 +128,6 @@ footer img {
 }
 
 /*  RESPONSIVE DESIGN  */
-@media (min-width: 320px) and (max-width: 479px) {
-  .name {
-    font-size: 1.2rem;
-  }
-  .div-content {
-    margin-top: 2rem;
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 2rem;
-  }
-  .div-content img {
-    height: 15rem;
-    width: 15rem;
-    box-shadow: 2px 2px 10px 10px #e5097f;
-    margin-bottom: 2rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
-  }
-  .div-content p {
-    font-size: 1.5rem;
-    font-style: italic;
-    text-shadow: 1px 1px 5px black;
-    height: 20rem;
-    width: 15rem;
-    margin-left: 2rem;
-  }
-  footer {
-    font-size: 1rem;
-  }
-  footer p {
-    margin-top: 1.5rem;
-    margin-left: 2rem;
-  }
-  footer img {
-    height: 1rem;
-    width: 1rem;
-    margin-left: 3rem;
-  }
-  .hx {
-    font-size: 1.5rem;
-  }
-  .grid-products {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
-  .grid-products div {
-    margin-left: 2rem;
-    margin-right: 2rem;
-    margin-bottom: 5rem;
-  }
-  .grid-products h5 {
-    font-size: 1.2rem;
-  }
-  .grid-products div {
-    width: 10rem;
-    height: 25rem;
-  }
-  .grid-gallery img {
-    height: 15rem;
-    width: 18rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
-  }
-}
 @media (min-width: 480px) and (max-width: 765px) {
   .name {
     font-size: 2rem;
@@ -423,7 +147,7 @@ footer img {
   }
   footer p {
     font-size: 1rem;
-    margin-left: 2rem;
+    margin-left: 1rem;
     margin-top: 1rem;
   }
   footer img {

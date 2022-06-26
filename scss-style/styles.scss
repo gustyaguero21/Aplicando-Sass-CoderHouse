@@ -1,6 +1,5 @@
 //  IMPORTANDO EL RESET DE LA PAGINA
 @import "../scss-style/reset";
-@import "../scss-style/screen";
 @import "../scss-style/variables";
 @import "../scss-style/mixins";
 
@@ -20,7 +19,16 @@
     margin-bottom: 5rem;
 }
 .name{
-    @include fonts(2rem,italic);
+    @include fonts(2rem,none);
+}
+main{
+    ul{
+        li{
+            a{
+                font-size: 1.2rem;
+            }
+        }
+    }
 }
 
 /*  INDEX   */
@@ -115,3 +123,4 @@ footer{
 }
 // IMPORTANDO LAS MEDIA QUERIES
 @import "../scss-style/screen";
+
