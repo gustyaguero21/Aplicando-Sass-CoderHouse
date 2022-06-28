@@ -51,10 +51,13 @@ main{
 }
 
 /*  PRODUCTOS   */
-.grid-products{
+.grid{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly; 
+}
+.grid-products{
+    @extend .grid;
     div{
         margin:0rem 2rem 5rem 5rem ;
     }
@@ -67,24 +70,9 @@ main{
         font-size: 1.2rem;
     }
 }
-.boton{
-    background-color: $magenta;
-    color: white;
-    border-color: $magenta;
-    font-size: 1.2rem;
-    margin-top: 1rem;
-    &:hover{
-        background-color:white;
-        border-color: $magenta;
-        color:$magenta;
-        font-weight: bold;
-    }
-}
 /*  SERVICIOS */
 .grid-services{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly; 
+    @extend .grid;
     div{
         margin: 0rem 2rem 5rem 2rem;
     }
@@ -95,25 +83,16 @@ main{
         color: $magenta;
         font-weight: bold;
     }
-    .boton2{
-       @extend .boton;
-    }
 }
 /*  GALERIA    */
 .grid-gallery{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly; 
+    @extend .grid; 
     img{
         margin: 0rem 5rem 5rem 5rem;
         box-shadow: 2px 2px 10px 10px rgb(103, 103, 103);
     }
 }
 /*  CONTACTO    */
-.boton3{
-    @extend .boton;
-    margin-top: 1rem;
-}
 footer{
     @include fonts(2rem,none);
     font-weight: bold;
@@ -123,4 +102,3 @@ footer{
 }
 // IMPORTANDO LAS MEDIA QUERIES
 @import "../scss-style/screen";
-

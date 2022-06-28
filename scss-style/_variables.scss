@@ -1,1 +1,23 @@
+//  VARIABLE    //
 $magenta:#e5097f;
+//  MAPS    //
+$botones:(
+    1:$magenta,
+    2:$magenta,
+    3:$magenta,
+);
+@each $botoncitos,$valor in $botones {
+    .boton-#{$botoncitos}{
+        background-color: $valor;
+        color: white;
+        border-color: $magenta;
+        font-size: 1.2rem;
+        margin-top: 1rem;
+        &:hover{
+            background-color:white;
+            border-color: $magenta;
+            color:$magenta;
+            font-weight: bold;
+        }   
+    }
+}

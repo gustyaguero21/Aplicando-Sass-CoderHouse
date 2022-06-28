@@ -4,6 +4,48 @@
   color: #e5097f;
 }
 
+.boton-1 {
+  background-color: #e5097f;
+  color: white;
+  border-color: #e5097f;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+.boton-1:hover {
+  background-color: white;
+  border-color: #e5097f;
+  color: #e5097f;
+  font-weight: bold;
+}
+
+.boton-2 {
+  background-color: #e5097f;
+  color: white;
+  border-color: #e5097f;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+.boton-2:hover {
+  background-color: white;
+  border-color: #e5097f;
+  color: #e5097f;
+  font-weight: bold;
+}
+
+.boton-3 {
+  background-color: #e5097f;
+  color: white;
+  border-color: #e5097f;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+.boton-3:hover {
+  background-color: white;
+  border-color: #e5097f;
+  color: #e5097f;
+  font-weight: bold;
+}
+
 .body-background {
   background-image: url(../images/fondo-blanco.jpg);
   background-attachment: fixed;
@@ -52,11 +94,12 @@ main ul li a {
 }
 
 /*  PRODUCTOS   */
-.grid-products {
+.grid, .grid-gallery, .grid-services, .grid-products {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
+
 .grid-products div {
   margin: 0rem 2rem 5rem 5rem;
 }
@@ -70,26 +113,7 @@ main ul li a {
   font-size: 1.2rem;
 }
 
-.boton, .boton3, .grid-services .boton2 {
-  background-color: #e5097f;
-  color: white;
-  border-color: #e5097f;
-  font-size: 1.2rem;
-  margin-top: 1rem;
-}
-.boton:hover, .boton3:hover, .grid-services .boton2:hover {
-  background-color: white;
-  border-color: #e5097f;
-  color: #e5097f;
-  font-weight: bold;
-}
-
 /*  SERVICIOS */
-.grid-services {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
 .grid-services div {
   margin: 0rem 2rem 5rem 2rem;
 }
@@ -101,22 +125,14 @@ main ul li a {
   color: #e5097f;
   font-weight: bold;
 }
+
 /*  GALERIA    */
-.grid-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
 .grid-gallery img {
   margin: 0rem 5rem 5rem 5rem;
   box-shadow: 2px 2px 10px 10px rgb(103, 103, 103);
 }
 
 /*  CONTACTO    */
-.boton3 {
-  margin-top: 1rem;
-}
-
 footer {
   font-size: 2rem;
   font-style: none;
