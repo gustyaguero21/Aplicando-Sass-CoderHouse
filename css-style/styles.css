@@ -148,6 +148,9 @@ footer img {
   .name {
     font-size: 1.2rem;
   }
+  .hx {
+    font-size: 1.5rem;
+  }
   .div-content img {
     height: 15rem;
     width: 15rem;
@@ -156,18 +159,6 @@ footer img {
     font-size: 1.5rem;
     margin: 3rem 0rem 3rem 0rem;
     width: 15rem;
-  }
-  footer img {
-    height: 2rem;
-    width: 2rem;
-    margin-right: 1rem;
-  }
-  footer p {
-    font-size: 1rem;
-    margin-left: 4rem;
-  }
-  .hx {
-    font-size: 1.5rem;
   }
   .grid-products {
     display: flex;
@@ -194,6 +185,15 @@ footer img {
     width: 18rem;
     margin-left: 2rem;
     margin-right: 2rem;
+  }
+  footer img {
+    height: 2rem;
+    width: 2rem;
+    margin-right: 1rem;
+  }
+  footer p {
+    font-size: 1rem;
+    text-align: center;
   }
 }
 @media (min-width: 480px) and (max-width: 765px) {
@@ -241,7 +241,7 @@ footer img {
   }
   footer p {
     font-size: 1.2rem;
-    margin-left: 7.5rem;
+    text-align: center;
   }
   footer img {
     height: 2rem;
@@ -291,7 +291,7 @@ footer img {
   }
   footer p {
     font-size: 1.2rem;
-    margin-left: 10rem;
+    text-align: center;
   }
   footer img {
     height: 2rem;
@@ -342,7 +342,7 @@ footer img {
   }
   footer p {
     font-size: 1.5rem;
-    margin-left: 28rem;
+    text-align: center;
   }
   footer img {
     height: 2.5rem;
